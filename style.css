@@ -5,9 +5,11 @@
 }
 
 body{
+    overflow-x: hidden;
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     background: linear-gradient(to left,#202330, #626881)
+    
     
 }
 #logo{
@@ -102,6 +104,7 @@ img {
 }
 header{
     width: 100%;
+    height: 10vh;
     margin: 20px;
  
     
@@ -116,17 +119,25 @@ nav {
     color: whitesmoke;
     font-size: 60px;
     padding-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Poppins', sans-serif;
 }
 a{
     color: whitesmoke;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+a:hover{
+    color: gray;
 }
 ul{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     width: 50%;
+    font-family: 'Poppins', sans-serif;
     
 }
 footer{
@@ -166,4 +177,202 @@ footer{
     height: 500px;
     opacity: 0.2;
     
+}
+.burger{
+    display: none;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px;  
+   
+}
+
+@media screen and (max-width: 1260px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #logo{
+        width: 60%;
+    }
+    .title{
+        letter-spacing: 1px;
+        font-size: 40px;
+    }
+    ul{
+        width: 60%;
+    }
+    .burger{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1040px){
+    .title{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #logo{
+        width: 60%;
+    }
+    footer h4{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+   
+    .title{
+        font-size: 25px;
+    }
+   
+}
+@media screen and (max-width: 400px) {
+   
+    .title{
+        font-size: 18px;
+    }
+    footer h4{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    body{
+       overflow: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0;
+        height: 94vh;
+        top: 14.3vh;
+        z-index: 1;
+        background-color: #291731;
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 1s ease-in;
+       
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+@media screen and (max-width: 414px){
+    body{
+       overflow: hidden;
+    }
+    #logomain{
+        width: 80px;
+        height: 80px;
+        padding-right: 10px;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0;
+        height: 90vh;
+        top: 15.8vh;
+        z-index: 1;
+        background-color: #291731;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 1s ease-in;
+       
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+        padding-right: 20px;
+    }
+    a{
+        
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+}
+
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@media screen and (max-width: px){
+    body{
+       overflow: hidden;
+    }
+    #logomain{
+        width: 80px;
+        height: 80px;
+        padding-right: 10px;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0;
+        height: 90vh;
+        top: 15.8vh;
+        z-index: 1;
+        background-color: #290b36;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 1s ease-in;
+       
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+        cursor: pointer;
+        padding-right: 20px;
+    }
+    a{
+        
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
 }
