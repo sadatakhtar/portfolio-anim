@@ -1,7 +1,4 @@
-
-
-
-
+//selectors
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav-links');
 const navLinks = document.querySelectorAll('.nav-links li');
@@ -30,14 +27,16 @@ const navLinks = document.querySelectorAll('.nav-links li');
 
 
 
-
+//path to letters 
 const logo = document.querySelectorAll('#logo  path');
 console.log(logo);
 
+//loop through each letter for pixel length
 for(let i =0; i < logo.length; i++){
     console.log(`Letter ${i} is ${logo[i].getTotalLength()}`); 
 }
 
+/*
 const navSlide = ()=> {
     const burger = document.querySelectorAll('.burger');
     
@@ -49,4 +48,4 @@ const navSlide = ()=> {
     });
 }
 
-
+*/

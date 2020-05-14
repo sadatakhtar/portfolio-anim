@@ -105,8 +105,9 @@ img {
 header{
     width: 100%;
     height: 10vh;
-    margin: 20px;
- 
+    margin: 0px;
+    background-color: #291731;
+       
     
 }
 
@@ -114,6 +115,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #291731;
+  
 }
 .title{
     color: whitesmoke;
@@ -245,14 +248,14 @@ footer{
     body{
        overflow: hidden;
     }
+   
     .nav-links{
         position: absolute;
         right: 0;
         height: 94vh;
-        top: 14.3vh;
+        top: 10vh;
         z-index: 1;
         background-color: #291731;
-       
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -299,23 +302,25 @@ footer{
        overflow: hidden;
     }
     #logomain{
-        width: 80px;
-        height: 80px;
+        
+       
         padding-right: 10px;
     }
     .nav-links{
         position: absolute;
         right: 0;
         height: 90vh;
-        top: 15.8vh;
+        top: 10vh;
         z-index: 1;
         background-color: #291731;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 100%;
         transform: translateX(100%);
         transition: transform 1s ease-in;
+        opacity: 0.95;
+       
        
     }
     .nav-links li{
